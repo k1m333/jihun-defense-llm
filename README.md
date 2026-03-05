@@ -11,6 +11,8 @@
 - **Observability**: Full metrics on latency, faithfulness, pass rates
 
 ## 🏗️ Architecture
+
+```mermaid
 flowchart LR
     A[User Query] --> B[Constitutional Check]
     B -->|Pass| C[RAG Retrieval]
@@ -19,6 +21,7 @@ flowchart LR
     E --> F[Faithfulness Validation]
     F -->|Pass| G[Final Response]
     F -->|Fail| H[Retry / Fallback]
+```
 
 ## 🧠 Why JIHUN?
 
