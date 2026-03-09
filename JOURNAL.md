@@ -1,3 +1,9 @@
+## 2026-03-08 Sunday
+- Combined multi-head attention, feed-forward, residual connections, and layer norm.
+- Residual connections help gradients flow.
+- Layer norm stabilizes training.
+- This is the building block of modern LLMs.
+
 ## 2026-03-07 Saturday
 - Extended single-head to multi-head attention.
 - Each head learns different relationships (syntax, semantics, coreference).
