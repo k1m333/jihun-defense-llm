@@ -1,3 +1,9 @@
+## 2026-03-12 Thursday – Constitutional Safeguards
+- Built first version of refusal logic using keyword matching
+- Added audit logging for all refused prompts
+- Rules stored in simple text file for easy updates
+- Next: integrate with actual LLM
+
 ## 2026-03-08 Sunday
 - Combined multi-head attention, feed-forward, residual connections, and layer norm.
 - Residual connections help gradients flow.
