@@ -1,3 +1,19 @@
+## 2026-03-13 Friday - Constituional Safeguards Integration Complete
+Connected the constitutional safeguards layer with the transformer LLM,
+creating a complete pipeline:
+- Harmful prompts are refused based on keyword matching
+- Safe prompts flow through to the LLM for processing
+- Transformer returns a shape based on tokens and embedding dimension
+
+Key insights:
+- Tokenization is simple and naive currently by using whitespace splitting, which is why "What's 2+2? prompt gives two tokens.
+- Pipeline works E2E, proving architecture is sound
+
+Next steps:
+- Implement proper tokenization (character-level or BPE)
+- Add regex support for more sophisticated refusal rules
+- Build a real generation loop
+
 ## 2026-03-12 Thursday – Constitutional Safeguards
 - Built first version of refusal logic using keyword matching
 - Added audit logging for all refused prompts
